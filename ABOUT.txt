@@ -1,0 +1,9 @@
+GitHub About — to set when the repository is created (do not submit before the user approves)
+
+Repository name (planned): gta6-cover-art-01-panel-forge
+Owner: xwb529
+Description: Panel Forge — Leonida Cover Lab: an offline web app that turns your photo + caption into multi-panel GTA-style cover art and exports it as a PNG.
+Website: https://make.fun/bounty/gta6-cover-art-01
+Topics: makefun, ai-agents, bounties, games
+Visibility: Public
+License: MIT (LICENSE file at root, Copyright (c) 2026 xwb529)
