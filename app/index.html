@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panel Forge — Leonida Cover Lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div>
+    <h1>Panel Forge</h1>
+    <p class="tagline">Leonida Cover Lab — your photo in, a multi-panel poster out. Offline, on your machine.</p>
+  </div>
+  <ol class="steps">
+    <li><strong>1</strong> Photo</li>
+    <li><strong>2</strong> Panels</li>
+    <li><strong>3</strong> Caption</li>
+    <li><strong>4</strong> Export PNG</li>
+  </ol>
+</header>
+
+<main class="layout">
+  <section class="controls" aria-label="Cover controls">
+    <h2>Photo</h2>
+    <label class="field">One photo for every panel
+      <input id="hero-photo" type="file" accept="image/*">
+    </label>
+    <div class="row">
+      <button id="sample-pier" type="button">Try the pier sample</button>
+      <button id="sample-boulevard" type="button">Try the boulevard sample</button>
+    </div>
+
+    <h2>Panels</h2>
+    <label class="field">Layout
+      <select id="template">
+        <option value="classic">Classic Five</option>
+        <option value="strips">Sunset Strips</option>
+        <option value="grid">Neon Grid</option>
+      </select>
+    </label>
+    <label class="field">Colour grade
+      <select id="grade">
+        <option value="sunset">Vice Sunset</option>
+        <option value="neon">Neon Nights</option>
+        <option value="gold">Leonida Gold</option>
+        <option value="noir">Noir Mono</option>
+      </select>
+    </label>
+    <p class="hint">Pick a panel, give it its own photo if you like, zoom it, then drag the big preview to reposition it.</p>
+    <div id="panel-controls"></div>
+
+    <h2>Caption</h2>
+    <label class="field">Cover title (one line each)
+      <textarea id="title" rows="2">LEONIDA
+HEAT</textarea>
+    </label>
+    <label class="field">Subtitle
+      <input id="subtitle" type="text" value="Panel Forge cover lab">
+    </label>
+
+    <h2>Export</h2>
+    <label class="field">Post size
+      <select id="size">
+        <option value="square">Square post · 1080 × 1080</option>
+        <option value="portrait">Portrait post · 1080 × 1350</option>
+        <option value="wide">Wide post · 1920 × 1080</option>
+      </select>
+    </label>
+    <button id="export" type="button" class="export">Download PNG</button>
+    <p class="hint">Your photos never leave this page. No uploads, no accounts, no network.</p>
+  </section>
+
+  <section class="stage-wrap" aria-label="Live cover preview">
+    <canvas id="stage" width="1080" height="1080"></canvas>
+  </section>
+</main>
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
